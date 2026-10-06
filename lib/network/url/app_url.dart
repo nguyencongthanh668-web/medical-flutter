@@ -1,7 +1,8 @@
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:flutter/foundation.dart';
 
 class BaseUrl {
-  static String baseUrl = Hive.box('urlBox').get('baseUrl');
+  static String baseUrl = kIsWeb ? 'http://localhost:3000/' : 'http://10.0.2.2:3000/';
 }
 
 class EndPoints {

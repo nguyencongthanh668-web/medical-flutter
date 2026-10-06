@@ -54,6 +54,9 @@ class NotificationCubit extends Cubit<NotificationState> {
 
       log(e.toString());
       log(s.toString());
+      print('========= LỖI DỮ LIỆU Ở ĐÂY =========');
+      print(e.toString());
+      print('=====================================');
     }
   }
 }

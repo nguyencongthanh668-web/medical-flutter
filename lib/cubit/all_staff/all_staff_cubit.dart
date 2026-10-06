@@ -47,13 +47,15 @@ class AllStaffCubit extends Cubit<AllStaffState> {
       log(s.toString());
     }
 
-    catch(e,s) {
-      emit(state.copyWith(
-        status: AllStaffStatus.failure,
-      ));
-
-      log(e.toString());
-      log(s.toString());
-    }
+    catch(e, s) {
+    emit(state.copyWith(
+       status: AllStaffStatus.failure,
+    ));
+    
+    // Thêm dòng print thần thánh này vào đây
+    print('========= LỖI DỮ LIỆU Ở ĐÂY =========');
+    print(e.toString());
+    print('=====================================');
+      }
   }
 }

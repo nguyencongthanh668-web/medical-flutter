@@ -68,10 +68,9 @@ class Auth {
     }
 
     catch(e,s) {
-      log(e.toString());
-      log(s.toString());
-
-      return 'Error';
+      print('=== LỖI RỒI NÀY ===');
+  print(e.toString());
+  return 'Error';
     }
   }
 
